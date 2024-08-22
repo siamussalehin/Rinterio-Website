@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinterio</title>
+    <!-- Font awesome  cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Tailwind css and DaisyUI cdn --> 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!-- Tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: 'rgb(255, 255, 255)',
+              primary:'#ABEF5F',
+            },
+              fontFamily:{
+              Manrope:"Manrope",
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="font-Manrope">
+
+    <!-- Header section start -->
+     <header>
+      <!-- Nav section -->
+      <nav class="container mx-auto lg:py-5">
+        <div class="navbar">
+          <div class="navbar-start flex items-center gap-2">
+            <i class="fa-solid fa-arrow-right -rotate-45 px-2 py-2 rounded-full bg-primary text-black"></i>
+            <h2 class="text-2xl md:text-4xl font-extrabold">Rinterio</h2>
+          </div>
+          <div class="navbar-center hidden lg:flex ">
+            <ul class="menu menu-horizontal px-1 font-bold ">
+              <li class="hover:text-primary transition-colors duration-100 ease-in-out"><a>Home</a></li>
+              <li class="hover:text-primary transition-colors duration-100 ease-in-out"><a>Services</a></li>
+              <li class="hover:text-primary transition-colors duration-100 ease-in-out"><a>Portfolio</a></li>
+              <li class="hover:text-primary transition-colors duration-100 ease-in-out"><a>Blogs</a></li>
+              <li class="hover:text-primary transition-colors duration-100 ease-in-out"><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="hidden md:flex items-center gap-5 text-lg">
+              <button class="bg-white px-2 py-1 rounded-full border-solid border-2 border-gray-100">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <button class="bg-white px-2 py-1 rounded-full border-solid border-2 border-gray-100">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+              <div class="">
+              <button  class="flex items-center gap-2 bg-primary px-4 py-2 rounded-full">
+                <p class="font-extrabold">Book Consult</p>
+                <i class="fa-solid fa-arrow-right -rotate-45 px-2 py-2 rounded-full bg-black text-white"></i>
+              </button>
+            </div>
+            </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars bg-white px-2 py-2 rounded-full border-solid border-2 border-gray-100"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0 gap-3">
+                <li class="hover:text-primary transition-colors duration-100 ease-in-out"><a>Home</a></li>
+                <li class="hover:text-primary transition-colors duration-100 ease-in-out"><a>Services</a></li>
+                <li class="hover:text-primary transition-colors duration-100 ease-in-out"><a>Portfolio</a></li>
+                <li class="hover:text-primary transition-colors duration-100 ease-in-out"><a>Blogs</a></li>
+                <li class="hover:text-primary transition-colors duration-100 ease-in-out"><a>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+         
+        </div>
+      </nav>
+      <!-- Banner section -->
+       <section>
+        <div class="flex flex-col items-center justify-center">
+          <img src="./assets/banner.png" alt="">
+          <h1>A barn house of this design has a striking appearance</h1>
+        </div>
+       </section>
+     </header>
+  </body>
+</html>
